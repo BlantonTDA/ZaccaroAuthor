@@ -1221,3 +1221,14 @@ body::after {
   .hero__inner { padding-top: 60vw; padding-bottom: 3.5rem; }
   .hero__copy .demo, .hero__copy .intro { width: min(100%, 30rem); }
 }
+
+/* ============ PHONES ONLY: headline sits on the hair, face stays clear ============ */
+@media (max-width: 600px) {
+  .hero__title { transform: translateY(calc(var(--hero-pad) * -1 + 6rem)); }
+}
+@media (max-width: 360px) {
+  .hero__title { transform: translateY(calc(var(--hero-pad) * -1 + 5.3rem)); }
+}
+@media (max-width: 300px) {
+  .hero__title { transform: translateY(calc(var(--hero-pad) * -1 + 4rem)); }
+}
