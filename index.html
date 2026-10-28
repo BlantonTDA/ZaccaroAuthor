@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lawrence M. Zaccaro | Official Author Website</title>
+  <meta name="description" content="The official website of Lawrence M. Zaccaro. Children's books, a science fiction thriller and an adult comedy, all available on Amazon.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23c47a48'/%3E%3Cpath d='M10 22c4-1 8-5 12-12-1 6-3 10-7 13z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" id="home" data-nav="home" data-theme="dark">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__tint" aria-hidden="true"></div>
+
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <h1 class="hero__title">Stories that spark<br>imagination at<br>every age</h1>
+      <a class="btn btn--blue" href="#library">
+        <span>Explore the books</span>
+        <span class="btn__ic"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="demo glass" href="#about" aria-label="Meet the author">
+        <span class="demo__label">Meet the author <i class="fa-solid fa-play"></i><i class="fa-solid fa-play"></i></span>
+        <span class="demo__author">
+          <img class="demo__img" src="images/author.png" alt="">
+          <span class="demo__who"><b data-bind="name">Author Name</b><small>Author and speaker</small></span>
+        </span>
+      </a>
+
+      <div class="intro">
+        <p class="intro__label"><i class="fa-solid fa-feather"></i> INTRODUCING <span data-bind="nameUpper">AUTHOR NAME</span></p>
+        <p class="intro__text" data-bind="intro">Thoughtful, honest storytelling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about" data-nav="about" data-theme="light">
+  <p class="label reveal">About <span data-bind="name">Author Name</span></p>
+  <p class="about__text reveal">
+    <span data-bind="name">Author Name</span> is an author and creative entrepreneur from Connecticut.
+    A former research biologist, he writes <strong>heartwarming books for young readers</strong>
+    and thought provoking novels for adults. Every story is crafted to be
+    <strong>read aloud, shared and remembered</strong>, from a gentle bedtime tale to a science fiction thriller.
+  </p>
+
+  <div class="bio glass-light reveal">
+    <img class="bio__photo" src="images/author.png" alt="Portrait of Lawrence M. Zaccaro">
+    <div class="bio__txt">
+      <h3 data-bind="name">Author Name</h3>
+      <p class="bio__role">Author, speaker and creative entrepreneur</p>
+      <p>Through his company, Mystic Creative Products, Lawrence develops any creative project he deems suitable, from books to a family card game. He lives in Connecticut and is the proud father of four grown children and proud grandfather of four.</p>
+    </div>
+  </div>
+
+  <ul class="facts">
+    <li class="glass-light reveal"><h4>Wordplay</h4><p>An educational family card game where players make new words and score points to win.</p></li>
+    <li class="glass-light reveal"><h4>Bound for the screen</h4><p>Convergent and Chandler's List are adapted as screenplays and being shopped in Hollywood.</p></li>
+    <li class="glass-light reveal"><h4>Scientist turned storyteller</h4><p>Fifteen years as a research biologist before turning to business and writing.</p></li>
+    <li class="glass-light reveal"><h4>Business and teaching</h4><p>Negotiated legal agreements in business development for Pfizer Inc and taught college science courses.</p></li>
+    <li class="glass-light reveal"><h4>Frequent speaker</h4><p>An officer and speaker with Toastmasters International in Mystic, Connecticut.</p></li>
+    <li class="glass-light reveal"><h4>Active in the writing community</h4><p>Member of CAPA SE, the Connecticut Authors and Publishers Association.</p></li>
+  </ul>
+</section>
+
+<!-- LIBRARY -->
+<section class="section library" id="library" data-nav="books" data-theme="light">
+  <p class="label reveal">The library</p>
+  <h2 class="h2 reveal">Every book,<br>one place to begin</h2>
+  <div class="grid" id="grid"></div>
+  <div class="center reveal">
+    <a class="btn btn--blue" id="authorPage" href="https://www.amazon.com/" target="_blank" rel="noopener">
+      <span><i class="fa-brands fa-amazon"></i>&nbsp; See the full Amazon author page</span>
+      <span class="btn__ic"><i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq" data-nav="faq" data-theme="light">
+  <p class="label reveal">FAQs</p>
+  <h2 class="h2 reveal">Everything you<br>need to know</h2>
+  <div class="faq__list reveal" id="faqList"></div>
+</section>
+
+<!-- CTA + FOOTER -->
+<section class="cta" id="contact" data-nav="faq" data-theme="dark">
+  <footer class="foot glass">
+    <nav class="foot__col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="#library">All books</a>
+      <a href="#about">About the author</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <nav class="foot__col" aria-label="Connect">
+      <h3>Connect</h3>
+      <a id="footAmazon" href="https://www.amazon.com/" target="_blank" rel="noopener">Amazon author page</a>
+      <a id="footEmail" href="#" hidden>Email</a>
+    </nav>
+    <p class="foot__copy">&copy; <span id="year">2026</span> <span data-bind="name">Author Name</span>. All rights reserved.</p>
+  </footer>
+</section>
+
+<!-- FLOATING GLASS NAV -->
+<nav class="dock glass" id="dock" aria-label="Main">
+  <a href="#home" data-key="home" class="is-active">Home</a>
+  <a href="#about" data-key="about">About</a>
+  <a href="#library" data-key="books">Books</a>
+  <a href="#faq" data-key="faq">FAQ</a>
+</nav>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
