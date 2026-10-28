@@ -1232,3 +1232,7 @@ body::after {
 @media (max-width: 300px) {
   .hero__title { transform: translateY(calc(var(--hero-pad) * -1 + 4rem)); }
 }
+
+/* covers are as bright by default as they were on hover */
+.cover::after { opacity: .45; }
+.book:hover .cover::after { opacity: .45; }
