@@ -20,6 +20,16 @@ window.SITE = {
   */
   books: [
     {
+      title: "Esol the Wolverine",
+      edition: "Written with Daniel J. Zaccaro",
+      kind: "Children's adventure",
+      tagline: "A young wolverine's fight to survive on his own.",
+      blurb: "After a family tragedy, young Esol is separated from his mother and must learn to hunt and survive alone in the wilds of the Pacific northwest, until an unexpected human friend saves his life.",
+      icon: "fa-paw",
+      cover: "images/books/book-9.jpg",
+      amazon: "https://www.amazon.com/dp/B0HLSJ2P22"
+    },
+    {
       title: "Auntie Wintie and the Plopes",
       edition: "Second Edition",
       kind: "Children's story",
