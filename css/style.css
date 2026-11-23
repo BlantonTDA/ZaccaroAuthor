@@ -1238,10 +1238,32 @@ body::after {
 .cover::after { opacity: .45; }
 .book:hover .cover::after { opacity: .45; }
 
+/* Space between the library, Wordplay, video interviews and FAQs. */
+.library,
+.wordplay,
+.author-videos,
+.faq {
+  --section-edge-space: clamp(20px, 3vw, 28px);
+}
+.library,
+.wordplay,
+.author-videos {
+  padding-block-end: var(--section-edge-space);
+}
+.wordplay,
+.author-videos,
+.faq {
+  padding-block-start: var(--section-edge-space);
+}
+
 /* ============ WORDPLAY AND VIDEO INTERVIEWS ============ */
 .wordplay,
 .author-videos {
   scroll-margin-top: 1rem;
+}
+.wordplay > .h2,
+.author-videos > .h2 {
+  margin-top: 0;
 }
 .media-intro {
   max-width: 37rem;
