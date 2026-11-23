@@ -1376,11 +1376,11 @@ body::after {
 /* Fit all six navigation links on narrow screens. */
 @media (max-width: 375px) {
   .dock a {
-    padding-inline: .27rem;
-    font-size: .76rem;
+    padding-inline: .22rem;
+    font-size: .73rem;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 310px) {
   .dock {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1392,5 +1392,19 @@ body::after {
     padding: .23rem .4rem;
     font-size: .62rem;
     text-align: center;
+  }
+  .hero__title {
+    transform: translateY(calc(var(--hero-pad) * -1 + 5.6rem));
+  }
+  .about,
+  .library,
+  .wordplay,
+  .author-videos,
+  .faq,
+  .foot {
+    overflow-wrap: anywhere;
+  }
+  .foot__col a {
+    overflow-wrap: inherit;
   }
 }
