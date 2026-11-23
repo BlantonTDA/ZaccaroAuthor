@@ -352,7 +352,8 @@ section { position: relative; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 17.5rem), 1fr));
   gap: clamp(1rem, 2.2vw, 1.8rem);
-  max-width: 76rem; margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+  /* Cap the desktop grid at three columns so nine books fill three rows. */
+  max-width: 68rem; margin: clamp(2.5rem, 5vw, 4rem) auto 0;
 }
 .book {
   display: flex; flex-direction: column;
